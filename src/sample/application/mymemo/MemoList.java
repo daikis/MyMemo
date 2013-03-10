@@ -18,7 +18,7 @@ public class MemoList extends ListActivity {
 		super.onListItemClick(l, v, position, id);
 		memos = new MemoDBHelper(this);
 		SQLiteDatabase db = memos.getWritableDatabase();
-		Cursor cursor = db.query("memoDB", cols, "_ID" + String.valueOf(id), null, null, null, null);
+		Cursor cursor = db.query("memoDB", cols, "_ID=" + String.valueOf(id), null, null, null, null);
 		// TODO îÒêÑèßÇ…Ç»Ç¡ÇƒÇ¢ÇÈÇΩÇﬂämîF
 		startManagingCursor(cursor);
 		int idx = cursor.getColumnIndex("memo");
