@@ -45,6 +45,7 @@ public class MemoList extends ListActivity {
 			// TODO ”ñ„§‚É‚È‚Á‚Ä‚¢‚é‚½‚ßŠm”F
 			SimpleCursorAdapter adapter = new SimpleCursorAdapter(this, android.R.layout.simple_list_item_1, (Cursor) object, from, to);
 			setListAdapter(adapter);
+			String a = "aaa";
 		}
 		memos.close();
 	}
